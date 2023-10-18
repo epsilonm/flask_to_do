@@ -1,6 +1,6 @@
 {% macro show_note(note) -%}
 <tr>
-    <td><a href="{{ url_for('note', id=note.id)}}">{{ note.header }}</a></td>
+    <td><a href="{{ url_for('main.note', id=note.id)}}">{{ note.header }}</a></td>
     <td>{{ note.text }}</td>
     <td>{{ note.created_on.strftime('%Y-%m-%d %H:%M')}}</td>
     <td>{{ note.expires_on.strftime('%Y-%m-%d %H:%M') }}</td>

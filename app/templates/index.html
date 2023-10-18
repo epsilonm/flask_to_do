@@ -74,7 +74,7 @@
     </style>
     <ul class="cloud" role="navigation" aria-label="Webdev tag cloud">
         {% for ctg in categories %}
-            <li><a data-weight="{{ ctg.notes.count() }}" href="{{ url_for('category', id=ctg.id) }}">{{ ctg.name }}</a></li>
+            <li><a data-weight="{{ ctg.notes.count() }}" href="{{ url_for('main.category', id=ctg.id) }}">{{ ctg.name }}</a></li>
         {% endfor %}
     </ul>
 </div>

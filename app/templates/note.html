@@ -7,7 +7,7 @@
     {% include "table_header.html" with context %}
         {{ show_note(note) }}
     </table>
-    <a href="{{ url_for('delete', id=note.id) }}">Delete</a>
-    <a href="{{ url_for('is_done', id=note.id)}}">Is Done</a>
+    <a href="{{ url_for('main.delete', id=note.id) }}">Delete</a>
+    <a href="{{ url_for('main.is_done', id=note.id)}}">Is Done</a>
     
 {% endblock %}
