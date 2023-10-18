@@ -95,4 +95,4 @@ def is_done(id):
 def note(id):
     user = User.query.filter_by(id=current_user.get_id()).first()
     note = Note.query.filter_by(id=id).first()
-    return render_template('main.note.html', title='Note', note=note, user=user)
+    return render_template('note.html', title='Note', note=note, user=user)
